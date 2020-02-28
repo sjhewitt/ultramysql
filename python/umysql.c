@@ -670,6 +670,7 @@ int API_resultRowValue(void *result, int column, UMTypeInfo *ti, char *value, si
       valobj = DecodeString (ti, value, cbValue);
       break;
 
+    case MFTYPE_JSON:
     case MFTYPE_ENUM:
     case MFTYPE_GEOMETRY:
     case MFTYPE_BIT:
